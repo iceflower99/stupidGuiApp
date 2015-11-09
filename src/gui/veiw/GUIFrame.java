@@ -5,19 +5,28 @@ import gui.controller.GUIAppController;
 
 /**
  * @author madeleine hales
- *@ version 0.xNov 9, 2015
+ *@ version 0.2xNov 9, 2015 updated the setupFrame to load the contentOane with a GUIPanel.
  */
 public class GUIFrame extends JFrame
 {
 	private GUIAppController baseController;
-    public GUIFrame(GUIAppController baseController)
+    private GUIPanel basePanel;
+    
+	
+	public GUIFrame(GUIAppController baseController)
     {
     	this.baseController=baseController;
     }
     
     private void setUpFrame()
     {
-    	
+    	this.setContentPane(basePanel);
+    	this.setSize(400,400);
+    	this.setResizable(false);
+    	this.setVisible(true);
     }
-
+public GUIAppController getBaseontroller()
+{
+	return baseController;
+}
 }
