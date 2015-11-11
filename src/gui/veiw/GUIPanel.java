@@ -30,4 +30,13 @@ public class GUIPanel extends JPanel
 	   this.add(firstButton);
 	   this.add(firstTextField);
    }
+   private void setupLayout()
+   {
+	   this.add(firstButton);
+	   this.add(firstTextField);
+   }
+   private void setupListeners()
+   {
+	   
+   }
 }
